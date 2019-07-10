@@ -1,0 +1,23 @@
+baseurl: ""
+#------------------------------
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+#------------------------------
+description: Sample Jekyll site
+#------------------------------
+exclude:
+  - "*.lock"
+  - "*.njsproj"
+  - "*.user"
+  - Gemfile
+#------------------------------
+markdown: kramdown
+#------------------------------
+port: 8080
+#------------------------------
+title: Jekyll Site
+#------------------------------
+url: ""

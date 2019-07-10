@@ -1,0 +1,6 @@
+﻿<section class="gallery">
+	{% assign images = site.static_files | where: "image", true %}
+	{% for image in images %}
+	<img src="{{ image.path }}" alt="{{ image.name | replace: ".jpg", "" | capitalize }}" />
+	{% endfor %}
+</section>
