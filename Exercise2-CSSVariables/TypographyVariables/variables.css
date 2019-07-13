@@ -1,0 +1,12 @@
+﻿:root {
+	--font-size-h1: 2em;
+	--font-size-h2: 1.875em;
+	--font-size-h3: 1.75em;
+	--font-size-h4: 1.625em;
+	--font-size-h5: 1.5em;
+	--font-size-h6: 1.375em;
+	--font-size-large: 18px;
+	--font-size-medium: 16px;
+	--font-size-small: 14px;
+	--font-size-tiny: 12px;
+}

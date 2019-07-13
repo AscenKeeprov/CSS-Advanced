@@ -1,0 +1,26 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+ol, ul {
+	padding-bottom: 1em;
+	padding-left: 2em;
+}
+
+p, section {
+	padding-bottom: 1em;
+}

@@ -1,0 +1,147 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.875em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.375em;
+}
+
+html {
+	box-sizing: border-box;
+	color: var(--color-primary, rgb(40, 85, 105));
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+ol, section, ul {
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+p {
+	padding-bottom: 0.5em;
+}
+
+.course {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+	.course > button {
+		align-self: flex-start;
+		background-color: var(--color-attention, rgb(255, 200, 0));
+		border-color: transparent;
+		border-radius: 0.25em;
+		color: var(--color-white, rgb(255, 255, 255));
+		font-weight: 700;
+		padding: 0.5em 1.25em;
+	}
+
+		.course > button:focus,
+		.course > button:hover {
+			background-color: var(--color-primary, rgb(40, 85, 105));
+			color: var(--color-attention, rgb(255, 200, 0));
+		}
+
+	.course > .course-description {
+		margin-bottom: 1em;
+	}
+
+	.course > .course-title {
+		font-size: 1.125em;
+	}
+
+.list-courses {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+	.list-courses > li {
+		list-style-position: inside;
+		list-style-type: none;
+		margin-top: 0.5em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+		.list-courses > li:last-child {
+			margin-bottom: 0.5em;
+		}
+
+		.list-courses > li:not(:last-child) {
+			margin-bottom: 2.5em;
+		}
+
+.section-courses {
+	border-color: var(--color-attention, rgb(255, 200, 0));
+	border-radius: 0.25em;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 auto;
+	max-width: 95%;
+}
+
+@media (min-width: 768px) {
+	.course > .course-description {
+		margin-bottom: 2em;
+	}
+
+	.list-courses > li {
+		flex-basis: 30%;
+	}
+
+		.list-courses > li:not(:last-child) {
+			margin-bottom: 0.5em;
+		}
+
+	.section-courses {
+		max-width: 90%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.section-courses {
+		max-width: 75%;
+	}
+}
+
+@media (min-width: 1600px) {
+	.section-courses {
+		max-width: 50%;
+	}
+}

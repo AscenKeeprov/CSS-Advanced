@@ -1,0 +1,76 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+article {
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+	article > header {
+		text-align: center;
+	}
+
+body {
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-headings, serif);
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.875em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.375em;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: var(--font-family-content, sans-serif);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+ol, p, section, ul {
+	padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+	article {
+		max-width: 81.6%;
+	}
+}
+
+@media (min-width: 1024px) {
+	article {
+		max-width: 63.3%;
+	}
+}
+
+@media (min-width: 1600px) {
+	article {
+		max-width: 45%;
+	}
+}

@@ -1,0 +1,84 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: var(--font-size-h1, 2em);
+}
+
+h2 {
+	font-size: 1.875em;
+}
+
+h3 {
+	font-size: var(--font-size-h1, 1.75em);
+}
+
+h4 {
+	font-size: 1.625em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.375em;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 95%;
+}
+
+	main > h1 {
+		text-align: center;
+	}
+
+	main > h3 {
+		font-style: italic;
+	}
+
+ol, section, ul {
+	padding-bottom: 1em;
+}
+
+p {
+	font-size: var(--font-size-p, 1em);
+	padding-bottom: 1em;
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: 75%;
+	}
+}
+
+@media (min-width: 1024px) {
+	main {
+		max-width: 55%;
+	}
+}
+
+@media (min-width: 1600px) {
+	main {
+		max-width: 35%;
+	}
+}
