@@ -1,0 +1,37 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	background-color: rgb(232,234,238);
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+.button-primary {
+	background-color: rgb(255,255,255);
+	color: initial;
+	font-weight: 700;
+	letter-spacing: 0.03125em;
+	margin: 0.5em;
+	outline-color: rgb(30,60,90);
+	outline-style: solid;
+	outline-width: 0.3125em;
+	padding: 1.125em 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition-duration: 1s;
+	transition-property: outline-width;
+}
+
+	.button-primary:hover {
+		outline-width: 0.625em;
+	}

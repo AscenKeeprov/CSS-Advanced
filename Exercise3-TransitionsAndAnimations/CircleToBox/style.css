@@ -1,0 +1,34 @@
+﻿@keyframes circle-to-square {
+	from {
+		background-color: rgb(255,0,0);
+		border-radius: 50%;
+		height: 128px;
+		width: 128px;
+	}
+
+	to {
+		background-color: rgb(255, 155, 0);
+		border-radius: 0%;
+		height: 192px;
+		width: 192px;
+	}
+}
+
+body {
+	align-items: center;
+	display: flex;
+	height: 95vh;
+	justify-content: center;
+}
+
+.circle {
+	animation-direction: alternate;
+	animation-duration: 1.55s;
+	animation-iteration-count: infinite;
+	animation-name: circle-to-square;
+	background-color: rgb(255,0,0);
+	border-radius: 50%;
+	height: 128px;
+	margin: 0 auto;
+	width: 128px;
+}

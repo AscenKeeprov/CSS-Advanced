@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<title>Fancy list animation</title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<ul>
+		<li class="icon icon-home">
+			<a href="#">Home</a>
+		</li>
+		<li class="icon icon-sitemap">
+			<a href="#">Products</a>
+		</li>
+		<li class="icon icon-concierge-bell">
+			<a href="#">Services</a>
+		</li>
+		<li class="icon icon-building">
+			<a href="#">Office</a>
+		</li>
+		<li class="icon icon-file-signature">
+			<a href="#">Contacts</a>
+		</li>
+		<li class="icon icon-user-tie">
+			<a href="#">About us</a>
+		</li>
+		<li class="icon icon-shopping-cart">
+			<a href="#">Basket</a>
+		</li>
+	</ul>
+	<script>
+		document.getElementsByTagName('li')[0]
+			.addEventListener('animationiteration', () => {
+				location.reload();
+			});
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+}
+
+.gradient-box {
+	height: 80%;
+	margin: auto;
+	position: relative;
+	width: 80%;
+}
+
+	.gradient-box::after {
+		background: linear-gradient(0deg, rgb(240,240,240) 0%, rgb(130,145,160) 100%);
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition-duration: 1s;
+		transition-property: opacity;
+	}
+
+	.gradient-box::before {
+		background: linear-gradient(0deg, rgb(250,200,140) 0%, rgb(200,130,50) 100%);
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.gradient-box:hover::after {
+		opacity: 0;
+	}
