@@ -1,0 +1,65 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	grid-column-gap: 1.75vw;
+	grid-row-gap: 1.75vw;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	padding: 1.75vw;
+}
+
+	body > * {
+		background-color: rgb(0,0,0);
+		border-radius: 0.25em;
+		color: rgb(255,255,255);
+		font-weight: 700;
+		padding: 1.75em;
+	}
+
+	body > aside.sidebar {
+		grid-column: 9 / 13;
+	}
+
+	body > footer,
+	body > header {
+		grid-column: 1 / 13;
+	}
+
+	body > main.content {
+		grid-column: span 8;
+	}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+@media (max-width: 800px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 414px) {
+	body {
+		grid-template-columns: initial;
+	}
+
+		body > aside.sidebar,
+		body > footer,
+		body > header,
+		body > main.content {
+			grid-column: 1 / -1;
+		}
+
+	html {
+		font-size: 12px;
+	}
+}
