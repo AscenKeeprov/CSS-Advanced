@@ -1,0 +1,102 @@
+﻿*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(7, 8.75em);
+	grid-template-rows: repeat(12, 1.5em);
+	justify-content: center;
+	margin: 0 auto;
+	padding: 4em 0;
+}
+
+html {
+	align-items: center;
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+}
+
+.bar {
+	font-weight: 700;
+	padding: 0 0.25em;
+}
+
+.barA {
+	background-color: rgb(125, 255, 215);
+	grid-column-end: 2;
+	grid-column-start: 1;
+	grid-row-end: 13;
+	grid-row-start: 12;
+}
+
+.barB {
+	background-color: rgb(255, 255, 0);
+	grid-column-end: 3;
+	grid-column-start: 2;
+	grid-row-end: 13;
+	grid-row-start: 9;
+}
+
+.barC {
+	background-color: rgb(255, 190, 205);
+	grid-column-end: 4;
+	grid-column-start: 3;
+	grid-row-end: 13;
+	grid-row-start: 11;
+}
+
+.barD {
+	background-color: rgb(100, 225, 230);
+	grid-column-end: 5;
+	grid-column-start: 4;
+	grid-row-end: 13;
+	grid-row-start: 6;
+}
+
+.barE {
+	background-color: rgb(200, 245, 130);
+	grid-column-end: 6;
+	grid-column-start: 5;
+	grid-row-end: 13;
+	grid-row-start: 2;
+}
+
+.barF {
+	background-color: rgb(120, 25, 205);
+	grid-column-end: 7;
+	grid-column-start: 6;
+	grid-row-end: 13;
+	grid-row-start: 5;
+}
+
+.barG {
+	background-color: rgb(245, 140, 20);
+	grid-column-end: 8;
+	grid-column-start: 7;
+	grid-row-end: 13;
+	grid-row-start: 12;
+}
+
+@media (max-width: 1280px) {
+	body {
+		grid-template-columns: repeat(7, 5.9em);
+	}
+
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 414px) {
+	body {
+		grid-template-columns: repeat(7, 4em);
+	}
+
+	html {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,69 @@
+﻿:root {
+	--border-radius-desktop: 0.75em;
+	--chessboard-gap-desktop: 0.75em;
+	--chessboard-side-squares: 5;
+	--mobile-multiplier-small: 0.75;
+	--mobile-multiplier-tiny: 0.625;
+	--square-side-desktop: 6em;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 4em 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.chessboard {
+	display: grid;
+	grid-gap: var(--chessboard-gap-desktop, 0.75em);
+	grid-template-columns: repeat(var(--chessboard-side-squares, 5), var(--square-side-desktop, 6em));
+	grid-template-rows: repeat(var(--chessboard-side-squares, 5), var(--square-side-desktop, 6em));
+}
+
+	.chessboard > .square:nth-child(odd) {
+		background-color: rgb(0,0,0);
+	}
+
+.square {
+	border-color: rgb(0,0,0);
+	border-radius: var(--border-radius-desktop, 0.75em);
+	border-style: solid;
+	border-width: 1px;
+}
+
+@media (max-width: 414px) {
+	.chessboard {
+		grid-gap: calc(var(--chessboard-gap-desktop, 0.75em) * var(--mobile-multiplier-small, 0.75));
+		grid-template-columns: repeat(var(--chessboard-side-squares, 5), calc(var(--square-side-desktop, 6em) * var(--mobile-multiplier-small, 0.75)));
+		grid-template-rows: repeat(var(--chessboard-side-squares, 5), calc(var(--square-side-desktop, 6em) * var(--mobile-multiplier-small, 0.75)));
+	}
+
+	.square {
+		border-radius: calc(var(--border-radius-desktop, 0.75em) * var(--mobile-multiplier-small, 0.75));
+	}
+}
+
+@media (max-width: 375px) {
+	.chessboard {
+		grid-gap: calc(var(--chessboard-gap-desktop, 0.75em) * var(--mobile-multiplier-tiny, 0.625));
+		grid-template-columns: repeat(var(--chessboard-side-squares, 5), calc(var(--square-side-desktop, 6em) * var(--mobile-multiplier-tiny, 0.625)));
+		grid-template-rows: repeat(var(--chessboard-side-squares, 5), calc(var(--square-side-desktop, 6em) * var(--mobile-multiplier-tiny, 0.625)));
+	}
+
+	.square {
+		border-radius: calc(var(--border-radius-desktop, 0.75em) * var(--mobile-multiplier-tiny, 0.625));
+	}
+}
