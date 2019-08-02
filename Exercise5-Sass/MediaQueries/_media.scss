@@ -1,0 +1,11 @@
+﻿$media-max-widths: ( phone: 414px, tablet: 800px, laptop: 1024px );
+
+@mixin media-max-width($device-type, $media-map: $media-max-widths) {
+	@if map-has-key($media-map, $device-type) {
+		$device-type: map-get($media-map, $device-type);
+	}
+
+	@media (max-width: #{$device-type}) {
+		@content;
+	}
+}

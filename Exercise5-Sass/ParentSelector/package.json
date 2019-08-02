@@ -1,0 +1,21 @@
+{
+	"author": "Asen Kiprov",
+	"dependencies": {
+		"gulp": "^4.0.2",
+		"gulp-sass": "^4.0.2",
+		"node-sass": "^4.12.0"
+	},
+	"description": "Sass interpolation exercise",
+	"license": "MIT",
+	"main": "gulpfile.js",
+	"name": "sass-interpolation",
+	"scripts": {
+		"start": "gulp"
+	},
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AscenKeeprov/CSS-Advanced.git"
+	},
+	"version": "1.0.0"
+}
